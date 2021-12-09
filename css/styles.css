@@ -122,6 +122,11 @@ ul {
   color: var(--link-color);
   text-decoration: none;
 }
+.ln-contact:hover .icons-header,
+.ln-contact:focus .icons-header {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 .icons-header {
   fill: var(--link-color);
   margin-right: 10px;
@@ -139,6 +144,9 @@ ul {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/heroimg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
   background-color: var(--background-herofoot-color);
   height: 600px;
   max-width: 1600px;
@@ -348,6 +356,7 @@ ul {
   padding: 60px 0;
 }
 .container-footer {
+  align-items: baseline;
   display: flex;
 }
 .container-footer-right {
@@ -370,7 +379,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  padding-bottom: 9px;
 }
 .footer-contact {
   font-family: inherit;
@@ -379,7 +387,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 9px;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
@@ -390,7 +397,6 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 14px;
   margin-bottom: 20px;
   color: var(--white-color);
 }
@@ -461,8 +467,11 @@ ul {
 .examples-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-.examples-item:hover,
-.examples-item:focus {
+.examples-item-link {
+  display: block;
+}
+.examples-item-link:hover,
+.examples-item-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
